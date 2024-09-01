@@ -1,109 +1,125 @@
 /* General Styles */
 body {
-    font-family: 'Arial', sans-serif;
-    background-color: #f0f0f5; /* Light background color for contrast */
-    color: #333;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-  }
-  
-  /* Header Styles */
-  header {
-    background-color: #4a90e2; /* Bold blue color */
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 4px 2px -2px gray; /* Adds a shadow for depth */
-  }
-  
-  nav a {
-    margin: 0 20px;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    font-size: 1.2em;
-  }
-  
-  nav a:hover {
-    color: #f8e71c; /* Bright yellow color on hover */
-  }
-  
-  /* Section Styles */
-  section {
-    padding: 40px;
-    margin: 20px;
-    background-color: white;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s; /* Smooth transition for hover effect */
-  }
-  
-  section:hover {
-    transform: scale(1.02); /* Slight zoom effect on hover */
-  }
-  
-  /* About Section */
-  #about {
-    background-color: #7ed321; /* Green background for the about section */
-    color: white;
-  }
-  
-  /* Projects Section */
-  #projects {
-    background-color: #f5a623; /* Orange background for the projects section */
-    color: white;
-  }
-  
-  /* Contact Section */
-  #contact {
-    background-color: #d0021b; /* Bold red background for the contact section */
-    color: white;
-  }
-  
-  /* Heading Styles */
-  h1, h2 {
-    color: #ffffff; /* White text for headings to stand out */
-    text-transform: uppercase;
-    text-shadow: 2px 2px #333; /* Shadow for depth */
-  }
-  
-  h2 {
-    border-bottom: 3px solid white;
-    display: inline-block;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-  }
-  
-  /* Link Styles */
-  a {
-    color: #4a90e2;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  a:hover {
-    color: #d0021b;
-  }
-  
-  /* Button Styles */
-  button {
-    background-color: #f8e71c; /* Bright yellow */
-    color: #333;
-    border: none;
-    padding: 10px 20px;
-    font-size: 1em;
-    font-weight: bold;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-  }
-  
-  button:hover {
-    background-color: #d0021b; /* Changes to red on hover */
-    color: white;
-  }
-  
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f5; /* Light background color for contrast */
+  color: #333;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  transition: background-color 0.5s; /* Smooth transition for color changes */
+}
+
+/* Header Styles */
+header {
+  background-color: #4a90e2; /* Bold blue color */
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 4px 2px -2px gray; /* Adds a shadow for depth */
+}
+
+nav a {
+  margin: 0 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2em;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #f8e71c; /* Bright yellow color on hover */
+}
+
+/* Section Styles */
+section {
+  padding: 40px;
+  margin: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, background-color 0.5s; /* Smooth transitions */
+}
+
+section:hover {
+  transform: scale(1.02); /* Slight zoom effect on hover */
+}
+
+/* Colorful Section Classes */
+#about {
+  background-color: #7ed321; /* Green background for the about section */
+  color: white;
+}
+
+#projects {
+  background-color: #f5a623; /* Orange background for the projects section */
+  color: white;
+}
+
+#contact {
+  background-color: #d0021b; /* Bold red background for the contact section */
+  color: white;
+}
+
+/* Heading Styles */
+h1, h2 {
+  color: #ffffff; /* White text for headings to stand out */
+  text-transform: uppercase;
+  text-shadow: 2px 2px #333; /* Shadow for depth */
+  font-size: 2em;
+  margin-bottom: 20px;
+  animation: fadeIn 2s ease-in; /* Fade-in animation for headings */
+}
+
+h2 {
+  border-bottom: 3px solid white;
+  display: inline-block;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+/* Keyframe Animation for Fade-in Effect */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+/* Button Styles */
+button {
+  background-color: #f8e71c; /* Bright yellow */
+  color: #333;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s, transform 0.3s;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #d0021b; /* Changes to red on hover */
+  color: white;
+  transform: scale(1.1); /* Enlarges the button slightly on hover */
+}
+
+/* Footer Styles */
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  position: sticky;
+  bottom: 0;
+  width: 100%;
+  box-shadow: 0 -4px 2px -2px gray; /* Adds a shadow for depth */
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9em;
+}
